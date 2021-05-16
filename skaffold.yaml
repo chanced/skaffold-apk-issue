@@ -1,0 +1,10 @@
+apiVersion: skaffold/v2beta16
+kind: Config
+metadata:
+  name: example
+build:
+  artifacts:
+    - image: example
+      context:
+      docker:
+        dockerfile: Dockerfile
